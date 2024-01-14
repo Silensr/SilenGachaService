@@ -3,7 +3,7 @@ import { h3 } from "lucia/middleware";
 import { prisma } from "@lucia-auth/adapter-prisma";
 import { PrismaClient } from "@prisma/client";
 
-import { github, discord } from "@lucia-auth/oauth/providers";
+import { discord } from "@lucia-auth/oauth/providers";
 
 const client = new PrismaClient();
 // expect error (see next section)
@@ -21,10 +21,6 @@ export const auth = lucia({
 
 const runtimeConfig = useRuntimeConfig();
 
-export const githubAuth = github(auth, {
-	clientId: runtimeConfig.githubClientId,
-	clientSecret: runtimeConfig.githubClientSecret
-});
 
 export const discordAuth = discord(auth, {
 	clientId: runtimeConfig.discordClientId,
