@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     githubClientId: "",
-    githubClientSecret: ""
+    githubClientSecret: "",
+
+    discordClientId: "",
+    discordClientSecret: "",
+    discordCallbackUri: ""
   }
 })
