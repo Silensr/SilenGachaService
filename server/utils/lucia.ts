@@ -24,8 +24,7 @@ const runtimeConfig = useRuntimeConfig();
 
 export const discordAuth = discord(auth, {
 	clientId: runtimeConfig.discordClientId,
-	clientSecret: runtimeConfig.discordClientSecret,
-	redirectUri: runtimeConfig.discordCallbackUri
+	clientSecret: runtimeConfig.discordClientSecret
 })
 
 export type Auth = typeof auth;
