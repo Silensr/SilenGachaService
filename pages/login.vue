@@ -6,7 +6,5 @@ if (user.value) {
 </script>
 <template>
 	<h1>Sign in</h1>
-	<a href="/api/login/github">Sign in with GitHub</a>
-	<br>
 	<a href="/api/login/discord">Sign in with Discord</a>
 </template>
