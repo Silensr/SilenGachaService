@@ -7,9 +7,8 @@ const user = useAuthenticatedUser();
 
 const handleSubmit = async (e: Event) => {
 	if (!(e.target instanceof HTMLFormElement)) return;
-	await $fetch("/api/login", {
+	await $fetch("/api/logout", {
 		method: "POST",
-		body: formData,
 		redirect: "manual" // ignore redirect responses
 	});
 	await navigateTo("/login");
