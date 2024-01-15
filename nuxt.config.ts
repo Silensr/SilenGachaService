@@ -8,6 +8,5 @@ export default defineNuxtConfig({
 
     discordClientId: "",
     discordClientSecret: "",
-    discordCallbackUri: ""
   }
 })
